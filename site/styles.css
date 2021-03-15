@@ -1,0 +1,65 @@
+/* таблица с расписанием */
+table.timetable {
+	width: 100%;
+	border-radius: 10pt;
+	border-spacing: 0pt;
+	box-shadow: 0pt 0pt 10pt 2pt #B0D0DF;
+}
+td.corner{
+	background-color: #A0D0FF;
+}
+tr:nth-child(even){
+	background-color: #F0F5FF;
+}
+td.week {
+	background-color: #D5E9FF;
+	text-align: center;
+	border-top: 2px solid white;
+}
+td.days {
+	width:14%;
+	height:30pt;
+	min-width: 120px;
+	background-color: #A0D0FF;
+	font-size: 100%;
+	text-align: center;
+	font-family: Arial Bold;
+	border-left: 2px solid white;
+}
+td.time{
+	height:50px;
+	width: 50px;
+	min-width: 45px;
+	background-color: #D5E9FF;
+	
+	font-size: 14px;
+	text-align: center;
+	font-family: Arial;
+	border-top: 2px solid white;
+
+}
+td.lesson{
+	min-width: 120px;
+	font-size: 12px;
+	font-family: Helvetica;
+	text-align: center;
+	border-left: 2px solid #A0D0FF;
+	border-spacing: 1px 0px;
+}
+td.lesson:hover {
+	background-color: #D5EFFF;
+}
+
+tr:first-child td:first-child{
+	border-top-left-radius: 12px;
+}
+tr:first-child td:last-child{
+	border-top-right-radius: 12px;
+}
+tr:last-child td:first-child{
+	border-bottom-left-radius: 12px;
+}
+tr:last-child td:last-child{
+	border-bottom-right-radius: 12px;
+}
+/* конец стилей таблицы с расписанием */
