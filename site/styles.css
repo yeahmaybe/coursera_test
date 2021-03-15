@@ -1,11 +1,4 @@
 /* таблица с расписанием */
-table.timetable {
-	word-break: all
-	width: 100%;
-	border-radius: 10pt;
-	border-spacing: 0pt;
-	box-shadow: 0pt 0pt 10pt 2pt #B0D0DF;
-}
 td.corner{
 	background-color: #A0D0FF;
 }
@@ -15,9 +8,17 @@ tr:nth-child(even){
 td.week {
 	background-color: #D5E9FF;
 	text-align: center;
+	height:10px;
 	border-top: 2px solid white;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 850px) {
+	table.timetable {
+		word-break: all;
+		width: 100%;
+		border-radius: 10pt;
+		border-spacing: 0pt;
+		box-shadow: 0pt 0pt 10pt 2pt #B0D0DF;
+	}
 	td.days {
 		width:14%;
 		height:30pt;
@@ -48,33 +49,42 @@ td.week {
 		border-spacing: 1px 0px;
 	}
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
+	table.timetable {
+		word-break: all;
+		width: 1000px;
+		border-radius: 10pt;
+		border-spacing: 0pt;
+		box-shadow: 0pt 0pt 10pt 2pt #B0D0DF;
+	}
 	td.days {
-		width: 14%;
-		height: 25px;
+		height: 40px;
+		width:14%;
 		min-width: 70px;
 		background-color: #A0D0FF;
-		font-size: 65%;
+		font-size: 100%;
 		text-align: center;
 		font-family: Arial;
 		border-left: 2px solid white;
 	}
 
 	td.lesson{
+		height: 100px;
 		min-width: 10px;
-		font-size: 9px;
-		font-family: Helvetica;
+		font-size: 14px;
+		padding: 10px;
+		font-family: Helvetica Bold;
 		text-align: center;
 		border-left: 2px solid #A0D0FF;
 		border-spacing: 1px 0px;
 	}
 	td.time{
-		height:50px;
+		width:30px;
 		max-width: 50px;
-		min-width: 25px;
+		min-width: 40px;
 		background-color: #D5E9FF;
 		
-		font-size: 8px;
+		font-size: 13px;
 		text-align: center;
 		font-family: Arial;
 		border-top: 2px solid white;
