@@ -11,7 +11,10 @@ td.week {
 	height:10px;
 	border-top: 2px solid white;
 }
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 800px) {
+	.for-small-screens {
+    display:none;
+  	}
 	table.timetable {
 		word-break: all;
 		width: 100%;
@@ -48,19 +51,23 @@ td.week {
 		border-left: 2px solid #A0D0FF;
 		border-spacing: 1px 0px;
 	}
+	td.lesson:hover {
+	background-color: #D5EFFF;
+	}
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 800px) {
+	
 	table.timetable {
 		word-break: all;
-		width: 1000px;
+		width: 900px;
 		border-radius: 10pt;
 		border-spacing: 0pt;
 		box-shadow: 0pt 0pt 10pt 2pt #B0D0DF;
 	}
 	td.days {
-		height: 40px;
+		height:40px;
 		width:14%;
-		min-width: 70px;
+		min-width: 30px;
 		background-color: #A0D0FF;
 		font-size: 100%;
 		text-align: center;
@@ -72,8 +79,8 @@ td.week {
 		height: 100px;
 		min-width: 10px;
 		font-size: 14px;
-		padding: 10px;
-		font-family: Helvetica Bold;
+		padding: 5px;
+		font-family: Helvetica;
 		text-align: center;
 		border-left: 2px solid #A0D0FF;
 		border-spacing: 1px 0px;
@@ -89,10 +96,6 @@ td.week {
 		font-family: Arial;
 		border-top: 2px solid white;
 	}
-}
-
-td.lesson:hover {
-	background-color: #D5EFFF;
 }
 
 tr:first-child td:first-child{
