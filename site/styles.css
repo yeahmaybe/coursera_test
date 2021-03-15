@@ -1,5 +1,6 @@
 /* таблица с расписанием */
 table.timetable {
+	word-break: all
 	width: 100%;
 	border-radius: 10pt;
 	border-spacing: 0pt;
@@ -16,36 +17,70 @@ td.week {
 	text-align: center;
 	border-top: 2px solid white;
 }
-td.days {
-	width:14%;
-	height:30pt;
-	min-width: 120px;
-	background-color: #A0D0FF;
-	font-size: 100%;
-	text-align: center;
-	font-family: Arial;
-	border-left: 2px solid white;
+@media screen and (min-width: 700px) {
+	td.days {
+		width:14%;
+		height:30pt;
+		min-width: 120px;
+		background-color: #A0D0FF;
+		font-size: 100%;
+		text-align: center;
+		font-family: Arial;
+		border-left: 2px solid white;
+	}
+	td.time{
+		height:50px;
+		width: 50px;
+		min-width: 50px;
+		background-color: #D5E9FF;
+		
+		font-size: 14px;
+		text-align: center;
+		font-family: Arial;
+		border-top: 2px solid white;
+	}
+	td.lesson{
+		min-width: 10px;
+		font-size: 12px;
+		font-family: Helvetica;
+		text-align: center;
+		border-left: 2px solid #A0D0FF;
+		border-spacing: 1px 0px;
+	}
 }
-td.time{
-	height:50px;
-	width: 50px;
-	min-width: 45px;
-	background-color: #D5E9FF;
-	
-	font-size: 14px;
-	text-align: center;
-	font-family: Arial;
-	border-top: 2px solid white;
+@media screen and (max-width: 700px) {
+	td.days {
+		width: 14%;
+		height: 25px;
+		min-width: 70px;
+		background-color: #A0D0FF;
+		font-size: 65%;
+		text-align: center;
+		font-family: Arial;
+		border-left: 2px solid white;
+	}
 
+	td.lesson{
+		min-width: 10px;
+		font-size: 9px;
+		font-family: Helvetica;
+		text-align: center;
+		border-left: 2px solid #A0D0FF;
+		border-spacing: 1px 0px;
+	}
+	td.time{
+		height:50px;
+		max-width: 50px;
+		min-width: 25px;
+		background-color: #D5E9FF;
+		
+		font-size: 8px;
+		text-align: center;
+		font-family: Arial;
+		border-top: 2px solid white;
+	}
 }
-td.lesson{
-	min-width: 120px;
-	font-size: 12px;
-	font-family: Helvetica;
-	text-align: center;
-	border-left: 2px solid #A0D0FF;
-	border-spacing: 1px 0px;
-}
+
 td.lesson:hover {
 	background-color: #D5EFFF;
 }
